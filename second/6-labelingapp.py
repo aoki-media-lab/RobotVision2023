@@ -4,7 +4,7 @@ import copy
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 # アプリ用のスタジアム、ボール画像を読みこみ
 ret, frame = cap.read()

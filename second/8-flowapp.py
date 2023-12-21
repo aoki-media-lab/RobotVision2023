@@ -15,7 +15,7 @@ move_distance = 10
 assert flow_usage in ["Version1", "Version2"]
 
 # Webカメラ設定
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 # Shi-Tomasiのコーナー検出パラメータ
 feature_params = dict(

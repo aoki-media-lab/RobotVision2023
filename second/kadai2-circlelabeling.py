@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 # 色の範囲
 # HSVRange["blue"]["lower"]で値を取り出せる

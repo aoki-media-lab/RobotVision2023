@@ -2,7 +2,7 @@ import glob
 
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 # スクショしたかどうかを保存する変数 (まだ撮っていないのでFalse)
 screenshot = False

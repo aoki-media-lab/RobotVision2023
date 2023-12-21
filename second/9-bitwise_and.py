@@ -6,7 +6,7 @@ http://labs.eecs.tottori-u.ac.jp/sd/Member/oyamada/OpenCV/html/py_tutorials/py_c
 # ライブラリのインポート
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 shizuku = cv2.imread("./image_data/shizuku.png")
 H, W, C = shizuku.shape

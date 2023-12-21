@@ -21,7 +21,7 @@ eye_cascade_path = "./face_data/haarcascade_eye.xml"
 face_cascade = cv2.CascadeClassifier(face_cascade_path)
 eye_cascade = cv2.CascadeClassifier(eye_cascade_path)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 while True:
     ret, img = cap.read()
